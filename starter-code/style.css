@@ -1,0 +1,13 @@
+:root {
+  --dark-blue: hsl(219, 43%, 16%);
+  --grey: hsl(218, 20%, 36%);
+  --cream: hsl(30, 33%, 93%);
+  --cream-white: hsl(30, 29%, 97%);
+  --bright-pastel-purple: hsl(264, 100%, 69%);
+  --bright-pastel-pink: hsl(292, 76%, 54%);
+  --bright-pastel-orange: hsl(31, 100%, 65%);
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+}
