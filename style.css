@@ -8,6 +8,118 @@
   --bright-pastel-orange: hsl(31, 100%, 65%);
 }
 
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  list-style: none;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Styling */
 body {
+  color: var(--grey);
+  background-color: var(--cream-white);
   font-family: "Epilogue", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  color: var(--dark-blue);
+  font-size: 2.375rem;
+  line-height: 1.15;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+figcaption {
+  font-size: 1rem;
+  line-height: 1.625;
+}
+
+.header__button a {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.hero__button a {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.benefits__title-styling {
+  color: var(--dark-blue);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.ceo__title-styling {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.benefits__group > p:nth-child(2) {
+  line-height: 1.625;
+}
+
+.ceo__wrapper figure {
+  font-size: 1.125rem;
+  line-height: 1.77;
+}
+
+.cite-styling {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer__wrapper p {
+  font-size: 0.938rem;
+  line-height: 2.13;
 }
