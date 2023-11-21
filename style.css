@@ -110,9 +110,8 @@ a {
   line-height: 1.77;
 }
 
-.cite-styling {
+.figcaption-styling {
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .footer__wrapper p {
@@ -143,8 +142,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 3.48rem;
-  padding: 0 1rem;
-  margin: 5.208rem 0 5rem;
+  padding: 5rem 1rem;
+  overflow-x: hidden;
 }
 
 .h1-styling {
@@ -211,7 +210,7 @@ a {
   align-items: center;
   color: var(--cream);
   text-align: center;
-  margin-top: 14.813rem;
+  margin-top: 8.75rem;
 }
 
 .testimonial__image picture {
@@ -241,21 +240,24 @@ a {
   background-position: center;
   background-size: 49.268px;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5.313rem; /* Adjust this as needed */
   width: 66px;
   height: 54px;
-  bottom: 5.313rem;
-  right: 6rem;
 }
 
 figcaption {
   display: flex;
   flex-direction: column;
   margin-top: 2.5rem;
+  text-transform: uppercase;
 }
 
 blockquote p {
   font-size: 1.125rem;
   line-height: 1.7;
+  margin-top: 2.5rem;
 }
 
 .p-styling {
@@ -274,7 +276,7 @@ blockquote p {
   flex-direction: column;
   align-items: center;
   gap: 33px;
-  padding: 4.5rem 7.844rem 5rem;
+  padding: 5.6rem 0 5rem;
 }
 
 .social__links ul {
