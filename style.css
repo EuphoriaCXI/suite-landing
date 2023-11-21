@@ -61,7 +61,6 @@ body {
   background-color: var(--cream-white);
   font-family: "Epilogue", sans-serif;
   font-weight: 400;
-
   -webkit-font-smoothing: antialiased;
 }
 
@@ -282,4 +281,29 @@ blockquote p {
 .social__links ul {
   display: flex;
   gap: 1.6rem;
+}
+
+@media screen and (min-width: 48rem) {
+  /* Viewport padding */
+  .header__wrapper {
+    padding: 2.5rem 2.5rem 0rem;
+  }
+
+  .hero__wrapper {
+    padding: 5rem 2.5rem 5.75rem;
+  }
+
+  .footer__wrapper {
+    padding: 4.5rem 2.5rem;
+  }
+
+  /* Header */
+  .header__button {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .header__button a {
+    font-size: 1rem;
+    line-height: 2;
+  }
 }
