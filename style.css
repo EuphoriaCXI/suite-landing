@@ -61,7 +61,6 @@ body {
   background-color: var(--cream-white);
   font-family: "Epilogue", sans-serif;
   font-weight: 400;
-
   -webkit-font-smoothing: antialiased;
 }
 
@@ -110,9 +109,8 @@ a {
   line-height: 1.77;
 }
 
-.cite-styling {
+.figcaption-styling {
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .footer__wrapper p {
@@ -143,8 +141,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 3.48rem;
-  padding: 0 1rem;
-  margin: 5.208rem 0 5rem;
+  padding: 5rem 1rem;
+  overflow-x: hidden;
 }
 
 .h1-styling {
@@ -167,6 +165,10 @@ a {
   height: 98%;
   bottom: 2.5rem;
   left: 3.9rem;
+}
+
+.tablet-hero-styling > .h1-styling::before {
+  display: none;
 }
 
 .hero__text {
@@ -211,7 +213,7 @@ a {
   align-items: center;
   color: var(--cream);
   text-align: center;
-  margin-top: 14.813rem;
+  margin-top: 8.75rem;
 }
 
 .testimonial__image picture {
@@ -241,21 +243,24 @@ a {
   background-position: center;
   background-size: 49.268px;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5.313rem; /* Adjust this as needed */
   width: 66px;
   height: 54px;
-  bottom: 5.313rem;
-  right: 6rem;
 }
 
 figcaption {
   display: flex;
   flex-direction: column;
   margin-top: 2.5rem;
+  text-transform: uppercase;
 }
 
 blockquote p {
   font-size: 1.125rem;
   line-height: 1.7;
+  margin-top: 2.5rem;
 }
 
 .p-styling {
@@ -274,10 +279,101 @@ blockquote p {
   flex-direction: column;
   align-items: center;
   gap: 33px;
-  padding: 4.5rem 7.844rem 5rem;
+  padding: 5.6rem 0 5rem;
 }
 
 .social__links ul {
   display: flex;
   gap: 1.6rem;
+}
+
+@media screen and (min-width: 48rem) {
+  /* Viewport padding */
+  .header__wrapper {
+    padding: 2.5rem 2.5rem 0rem;
+  }
+
+  .hero__wrapper {
+    padding: 5rem 2.5rem 5.75rem;
+  }
+
+  .footer__wrapper {
+    padding: 4.5rem 2.5rem;
+  }
+
+  /* Header */
+  .header__button {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .header__button a {
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  /* Hero */
+  .hero__wrapper {
+    display: grid;
+    grid-template-columns: 35.813rem 17.563rem;
+  }
+
+  .hero__image {
+    position: relative;
+    right: 13.6rem;
+    z-index: -1;
+  }
+
+  .tablet-hero-styling {
+    display: block;
+  }
+
+  .hero__text {
+    padding-top: 5.5rem;
+    gap: 2.5rem;
+  }
+
+  .hero__text h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero__text p {
+    letter-spacing: 0.06rem;
+    padding-right: 11rem;
+  }
+
+  .hero__benefits {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 3rem;
+  }
+
+  /* Testimonial */
+  .testimonial__container {
+    margin: 0 2.5rem;
+  }
+
+  .testimonial__wrapper {
+    margin-top: 15.2rem;
+  }
+
+  .testimonial__image picture {
+    margin-top: -15.813rem;
+  }
+
+  .ceo__wrapper {
+    padding: 7.713rem 3.725rem 4rem;
+  }
+
+  /* Footer */
+  .footer__container {
+    border: 2px solid red;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
